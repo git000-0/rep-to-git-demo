@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> home page</title>    
+    <title>水果专卖店</title>    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <link                                   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <head>
-    <body>
-      <div class="container">        
-        <h1 clas="text-center mt-2 mb-4">这是我的水果店，呵呵</h1>
-        <p class="lead">欢迎光临。客人好，非常欢迎使用我们的网站。这是我们水果专卖网站哦。如果看到其他可疑链接可随时举报我们哦。</p>    
-        <img class="img-fluid" scr=“https://c9b0e70b-6e37-4297-a12e-310e114aa2fb-00-1ryhrp0mno64v.riker.replit.dev/static/banana.jpg" width="120" height="90" alt="apple">
-        <div>
-          {%for des in info %}
-            {% include 'fruititem.html' %}     
-          {% endfor %}
-        </div>        
-        <h3 clas="text-center mt-2 mb-4">✶*  🎀  请问需要其他水果吗🎀  *✶</h3>
-        <h3 clas="text-center mt-2 mb-4">✶*  🎀 点击下方按钮联系我哦。呵呵 🎀  *✶</h3>
-        <div class="text-center">
-           <button class="btn btn-primary btn-lg">联系我</button>
-        </div>
+  </head>
+  <body>
+    <div class="container">        
+      <h1 class="text-center mt-2 mb-4">🐖 ⋆ 🐑  🎀  欢迎光临  🎀  🐑 ⋆ 🐖</h1>
+      <p class="lead">客人好，非常欢迎使用我们的网站。这是我们水果专卖网站哦。如有可疑链接随时举报我们哦 </p>  
+      <img class="img-fluid" scr=“banana.jpg" width="120" height="90" alt="apple">
+      <div>
+        {% for info in infos %}
+          {% include 'fruititem.html' %}     
+        {% endfor %}
+      </div>        
+      <h2 class="text-center mt-2 mb-4">✶*  🎀  请问需要其他水果吗🎀  *✶</h2>
+      <h3 class="text-center mt-2 mb-4">✶*  🎀 点击下方按钮联系我哦 呵呵 🎀  *✶</h3>
+      <div class="text-center">
+         <button class="btn btn-primary btn-lg">联系我</button>
       </div>
-    </body>
+    </div>
+  </body>
 </html>
       

@@ -3,16 +3,17 @@
     style="color: rgb(120, 120, 120); margin-bottom:14px;"
     {% if 'name' in info %}
     <div>
-      <b>水果名：</b>{{info['name']}}
+      <b>水果名：</b>{{infos['name']}}
     </div>
     {% endif %}
-    {% if 'price' in info %}
+    {% if 'price' in infos %}
     <div>            
-      <b>价格：</b>{{info['price']}}
+      <b>价格：</b>{{infos['price']}}
     </div>
     {% endif %}
-    {% if 'made' in info %}
+    {% if 'made' in infos %}
     <div>
-      <b>产地：</b>{{info['made']}}
+      <b>产地：</b>{{infos['made']}}
     </div>     
     {% endif %}
+</div>

@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-DESC = [
+INFOS = [
   {
     'id: ' : 1,
     'price': '$180/g',
@@ -22,7 +22,7 @@ DESC = [
 @app.route('/')
 def hello_world():
       return render_template('home.html',
-                            info = DESC)
+                            infos = INFOS)
                             
   
 if __name__ == '__main__': 
