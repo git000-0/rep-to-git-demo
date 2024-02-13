@@ -1,0 +1,18 @@
+<div style="margin-bottom:16px;">
+  <h4 
+    style="color: rgb(120, 120, 120); margin-bottom:14px;"
+    {% if 'name' in info %}
+    <div>
+      <b>水果名：</b>{{info['name']}}
+    </div>
+    {% endif %}
+    {% if 'price' in info %}
+    <div>            
+      <b>价格：</b>{{info['price']}}
+    </div>
+    {% endif %}
+    {% if 'made' in info %}
+    <div>
+      <b>产地：</b>{{info['made']}}
+    </div>     
+    {% endif %}
